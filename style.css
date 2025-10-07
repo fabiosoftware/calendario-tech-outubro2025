@@ -1,0 +1,48 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Calendário */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Destaque para eventos */
+.evento {
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .calendar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  .day {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
