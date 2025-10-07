@@ -43,12 +43,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsividade para celular */
 @media screen and (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
   table {
     width: 100%;
     display: block;
@@ -58,7 +53,6 @@ a:hover {
   th, td {
     font-size: 14px;
     padding: 10px;
-    word-break: break-word;
-    white-space: normal;
+    white-space: nowrap; /* mantém o texto em linha única */
   }
 }
