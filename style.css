@@ -14,7 +14,8 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 30px;
-  table-layout: auto;
+  table-layout: fixed;
+  word-wrap: break-word;
 }
 
 th, td {
@@ -22,13 +23,13 @@ th, td {
   padding: 12px;
   text-align: left;
   word-break: break-word;
-  vertical-align: top;
 }
 
 th {
-  background-color: #cc0000;
-  color: white;
+  background-color: #cc0000 !important; /* vermelho intenso */
+  color: white !important;
 }
+
 
 tr:nth-child(even) {
   background-color: #e9f1f7;
@@ -43,7 +44,12 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Responsividade para celular */
 @media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
   table {
     width: 100%;
     display: block;
@@ -53,6 +59,7 @@ a:hover {
   th, td {
     font-size: 14px;
     padding: 10px;
-    white-space: nowrap; /* mantém o texto em linha única */
+    word-break: break-word;
+    white-space: nowrap;
   }
 }
