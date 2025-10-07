@@ -14,8 +14,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 30px;
-  table-layout: fixed;
-  word-wrap: break-word;
+  table-layout: auto;
 }
 
 th, td {
@@ -23,6 +22,7 @@ th, td {
   padding: 12px;
   text-align: left;
   word-break: break-word;
+  vertical-align: top;
 }
 
 th {
@@ -58,5 +58,7 @@ a:hover {
   th, td {
     font-size: 14px;
     padding: 10px;
+    word-break: break-word;
+    white-space: normal;
   }
 }
