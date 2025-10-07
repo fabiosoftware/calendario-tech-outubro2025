@@ -1,48 +1,27 @@
-/* Reset e base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 20px;
-}
-
-/* Calendário */
-.calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-}
-
-.day {
+tr {
   background-color: #fff;
-  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  display: block;
   padding: 10px;
-  text-align: center;
 }
 
-/* Destaque para eventos */
-.evento {
-  background-color: #0077cc;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
+td {
+  display: block;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .calendar {
-    grid-template-columns: repeat(2, 1fr);
-  }
+td:last-child {
+  border-bottom: none;
+}
 
-  
-  .day {
-    font-size: 14px;
-    padding: 8px;
-  }
+th {
+  display: none; /* Oculta os cabeçalhos para visual mais limpo */
 }
