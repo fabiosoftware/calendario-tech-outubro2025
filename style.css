@@ -16,15 +16,19 @@ table {
   margin-top: 30px;
 }
 
-th, td {
-  border: 1px solid #ccc;
+  th, td {
+  border: 1px solid #000; /* preto */
+
   padding: 12px;
   text-align: left;
 }
 
 th {
-  background-color: #0077cc;
+  th {
+  background-color: #cc0000; /* vermelho */
   color: white;
+}
+
 }
 
 tr:nth-child(even) {
@@ -38,4 +42,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
 }
