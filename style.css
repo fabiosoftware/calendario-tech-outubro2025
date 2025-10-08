@@ -1,3 +1,4 @@
+/* Estilo base */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f6f8;
@@ -11,6 +12,7 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* Tabela */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -25,15 +27,18 @@ th, td {
   word-break: break-word;
 }
 
+/* Cabeçalho vermelho */
 th {
   background-color: #cc0000 !important;
   color: white !important;
 }
 
+/* Linhas alternadas */
 tr:nth-child(even) {
   background-color: #e9f1f7;
 }
 
+/* Links */
 a {
   color: #cc0000;
   text-decoration: none;
@@ -43,6 +48,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Responsividade para celular */
 @media screen and (max-width: 600px) {
   table {
     display: block;
